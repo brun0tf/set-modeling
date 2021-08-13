@@ -1,0 +1,60 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\Passo2_nand3_100_PD_N1toGND_FO4._30fCsp.sp"
+	Including "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\ptm_90nm.l"
+
+Start of Passo2_nand3_100_PD_N1toGND_FO4._30fCsp.sp
+Loaded BSIM4v450 model library, Berkeley BSIM4 v4.5.0
+
+	Opening simulation database "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\Passo2_nand3_100_PD_N1toGND_FO4._30fCsp.tsim"
+Warning : "Passo2_nand3_100_PD_N1toGND_FO4._30fCsp.sp" line 10 Power supply node VDD2 is singularly attached to V2, and will be terminated with a Gmin conductance
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -      14
+    MOSFET geometries -       3
+      Voltage sources -       6
+      Current sources -       2
+                 CCCS -       1
+          Subcircuits -       5
+    Model Definitions -       3
+      Computed Models -       2
+    Independent nodes -      64
+       Boundary nodes -       5
+          Total nodes -      69
+*** 1 WARNING MESSAGE GENERATED DURING SETUP
+
+
+Optimization model parameters:
+  Level   = 1
+  verbose = 1
+  cendif  = 1e-009
+  close   = 0.001
+  cut     = 2
+  difsiz  = 0.001
+  grad    = 1e-006
+  itropt  = 40
+  max     = 600000
+  parmin  = 0.1
+  relin   = 0.001
+  relout  = 0.001
+
+Warning : Warning messages were issued, but were suppressed
+        : during a sweep, optimization, or Monte Carlos analysis.
+        : 	Use '.options maxmsg=0' to view all warnings.
+
+Simulation stopped by user during Transient analysis 407.4688p sec., opt2=0
+
+Parsing                      0.01 seconds
+.TRAN Sweep                 11.74 seconds
+Overhead                     0.38 seconds
+-----------------------------------------
+Total                       12.13 seconds
+
+Simulation was stopped	with  2 Warnings

@@ -1,0 +1,32 @@
+.SUBCKT f33 a b c d out vdd gnd
+*.PININFO a:I b:I c:I d:I out:O vdd:P gnd:G
+*.EQN out=(!a * ((b * ((!c * d) + (c * !d))) + (!b * ((!c * !d) + (c * d)))));
+MP1 out a pu_n1 vdd 		pmos			L = 90n  W = '4*widthPmos'
+MP2 pu_n1 not_b pu_n3 vdd 	pmos	L = 90n  W = '4*widthPmos'
+MP3 pu_n3 c pu_n4 vdd 		pmos		L = 90n  W = '4*widthPmos'
+MP4 pu_n4 not_d vdd vdd 	pmos		L = 90n  W = '4*widthPmos'
+MP5 pu_n3 not_c pu_n6 vdd 	pmos	L = 90n  W = '4*widthPmos'
+MP6 pu_n6 d vdd vdd 		pmos			L = 90n  W = '4*widthPmos'
+MP7 pu_n1 b pu_n7 vdd 		pmos		L = 90n  W = '4*widthPmos'
+MP8 pu_n7 c pu_n8 vdd 		pmos		L = 90n  W = '4*widthPmos'
+MP9 pu_n8 d vdd vdd 		pmos			L = 90n  W = '4*widthPmos'
+MP10 pu_n7 not_c pu_n9 vdd	pmos	L = 90n  W = '4*widthPmos'
+MP11 pu_n9 not_d vdd vdd 	pmos	L = 90n  W = '4*widthPmos'
+MN12 out not_b pd_n1 gnd 	nmos	L = 90n  W = 3*108n
+MN13 pd_n1 not_c pd_n3 gnd 	nmos	L = 90n  W = 3*108n
+MN14 pd_n3 d gnd gnd 		nmos		L = 90n  W = 3*108n
+MN15 pd_n1 c pd_n5 gnd 		nmos		L = 90n  W = 3*108n
+MN16 pd_n5 not_d gnd gnd 	nmos	L = 90n  W = 3*108n
+MN17 out a gnd gnd 			nmos			L = 90n  W = 1*108n
+MN18 out b pd_n6 gnd 		nmos		L = 90n  W = 3*108n
+MN19 pd_n6 not_c pd_n7 gnd 	nmos	L = 90n  W = 3*108n
+MN20 pd_n7 not_d gnd gnd nmos	L = 90n  W = 3*108n
+MN21 pd_n6 c pd_n8 gnd nmos		L = 90n  W = 3*108n
+MN22 pd_n8 d gnd gnd nmos		L = 90n  W = 3*108n
+MP_inv23 not_b b vdd vdd pmos	L = 90n  W = 'widthPmos'
+MN_inv24 not_b b gnd gnd nmos	L = 90n  W = 108n
+MP_inv25 not_c c vdd vdd pmos	L = 90n  W = 'widthPmos'
+MN_inv26 not_c c gnd gnd nmos	L = 90n  W = 108n
+MP_inv27 not_d d vdd vdd pmos	L = 90n  W = 'widthPmos'
+MN_inv28 not_d d gnd gnd nmos	L = 90n  W = 108n
+.ENDS f33

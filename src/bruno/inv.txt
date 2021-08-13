@@ -1,0 +1,4 @@
+.SUBCKT inv a out VDD GND
+MP1 out a VDD VDD pmos L = 90n W = 'widthPmos'
+MN2 out a GND GND nmos L = 90n W = 1*200n
+.ENDS inv

@@ -1,0 +1,8 @@
+.SUBCKT nor3 a b c out VDD GND
+MP1 pu_n1 a VDD VDD pmos	L = 90n W = '3*widthpmos'
+MP2 pu_n3 b pu_n1 VDD pmos	L = 90n W = '3*widthpmos'
+MP3 out c pu_n3 VDD pmos	L = 90n W = '3*widthpmos'
+MN4 out a GND GND nmos		L = 90n W = 1*200n
+MN5 out b GND GND nmos		L = 90n W = 1*200n
+MN6 out c GND GND nmos		L = 90n W = 1*200n
+.ENDS nor3

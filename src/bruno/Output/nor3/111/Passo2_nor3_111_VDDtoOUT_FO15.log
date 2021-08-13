@@ -1,0 +1,54 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\111\Passo2_nor3_111_VDDtoOUT_FO15.sp"
+	Including "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\111\ptm_90nm.l"
+
+Start of Passo2_nor3_111_VDDtoOUT_FO15.sp
+Loaded BSIM4v450 model library, Berkeley BSIM4 v4.5.0
+
+	Opening simulation database "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\111\Passo2_nor3_111_VDDtoOUT_FO15.tsim"
+Warning : "Passo2_nor3_111_VDDtoOUT_FO15.sp" line 10 Power supply node VDD2 is singularly attached to V2, and will be terminated with a Gmin conductance
+Warning : "Passo2_nor3_111_VDDtoOUT_FO15.sp" line 13 Power supply node low is singularly attached to vinB, and will be terminated with a Gmin conductance
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -      36
+    MOSFET geometries -       3
+      Voltage sources -       6
+      Current sources -       2
+                 CCCS -       1
+          Subcircuits -      16
+    Model Definitions -       2
+      Computed Models -       2
+    Independent nodes -     152
+       Boundary nodes -       5
+          Total nodes -     157
+*** 2 WARNING MESSAGES GENERATED DURING SETUP
+
+
+Measure information will be written to file "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\111\Passo2_nor3_111_VDDtoOUT_FO15\Passo2_nor3_111_VDDtoOUT_FO15.measure"
+
+Measurement result summary
+   setTracker      =    1.2004       
+   vPeakMin        =    1.1493       
+   vPeakMax        =    1.1495       
+   avgPrompt       =   68.8583u      
+   cargaPrompt     =   27.5433f      
+   avgHold         =  141.2014u      
+   cargaHold       =   56.4806f      
+
+Parsing                      0.01 seconds
+Setup                        0.02 seconds
+DC operating point           0.01 seconds
+Transient Analysis           0.84 seconds
+Overhead                     0.90 seconds
+-----------------------------------------
+Total                        1.77 seconds
+
+Simulation completed	with  2 Warnings

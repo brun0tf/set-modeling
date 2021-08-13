@@ -1,0 +1,53 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\100\Passo2_nor3_100_VDDtoPU_N1_FO8.sp"
+	Including "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\100\ptm_90nm.l"
+
+Start of Passo2_nor3_100_VDDtoPU_N1_FO8.sp
+Loaded BSIM4v450 model library, Berkeley BSIM4 v4.5.0
+
+	Opening simulation database "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\100\Passo2_nor3_100_VDDtoPU_N1_FO8.tsim"
+Warning : "Passo2_nor3_100_VDDtoPU_N1_FO8.sp" line 10 Power supply node VDD2 is singularly attached to V2, and will be terminated with a Gmin conductance
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -      22
+    MOSFET geometries -       3
+      Voltage sources -       6
+      Current sources -       2
+                 CCCS -       1
+          Subcircuits -       9
+    Model Definitions -       2
+      Computed Models -       2
+    Independent nodes -      96
+       Boundary nodes -       5
+          Total nodes -     101
+*** 1 WARNING MESSAGE GENERATED DURING SETUP
+
+
+Measure information will be written to file "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nor3\100\Passo2_nor3_100_VDDtoPU_N1_FO8\Passo2_nor3_100_VDDtoPU_N1_FO8.measure"
+
+Measurement result summary
+   setTracker      =    1.2135       
+   vPeakMin        =    1.2130       
+   vPeakMax        =    1.2131       
+   avgPrompt       =   12.0369u      
+   cargaPrompt     =    4.8147f      
+   avgHold         =   54.6540u      
+   cargaHold       =   21.8616f      
+
+Parsing                      0.00 seconds
+Setup                        0.01 seconds
+DC operating point           0.00 seconds
+Transient Analysis           0.69 seconds
+Overhead                     0.90 seconds
+-----------------------------------------
+Total                        1.60 seconds
+
+Simulation completed	with  1 Warning

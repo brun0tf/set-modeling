@@ -1,0 +1,134 @@
+T-Spice - Tanner SPICE
+Version 16.01
+Network license
+Product Release ID: T-Spice Win64 16.01.20130407.21:15:40
+Copyright © 1988-2013 Tanner EDA
+
+	Parsing "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\Passo2_nand3_100_PD_N1toGND_FO4.sp"
+	Including "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\ptm_90nm.l"
+
+Start of Passo2_nand3_100_PD_N1toGND_FO4.sp
+Loaded BSIM4v450 model library, Berkeley BSIM4 v4.5.0
+
+	Opening simulation database "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\Passo2_nand3_100_PD_N1toGND_FO4.tsim"
+Warning : "Passo2_nand3_100_PD_N1toGND_FO4.sp" line 10 Power supply node VDD2 is singularly attached to V2, and will be terminated with a Gmin conductance
+
+General options:
+        threads = 1
+
+ Device and node counts:
+              MOSFETs -      14
+    MOSFET geometries -       3
+      Voltage sources -       6
+      Current sources -       2
+                 CCCS -       1
+          Subcircuits -       5
+    Model Definitions -       3
+      Computed Models -       2
+    Independent nodes -      64
+       Boundary nodes -       5
+          Total nodes -      69
+*** 1 WARNING MESSAGE GENERATED DURING SETUP
+
+
+Optimization model parameters:
+  Level   = 1
+  verbose = 1
+  cendif  = 1e-009
+  close   = 0.001
+  cut     = 2
+  difsiz  = 0.001
+  grad    = 1e-006
+  itropt  = 40
+  max     = 600000
+  parmin  = 0.1
+  relin   = 0.001
+  relout  = 0.001
+
+Warning : Warning messages were issued, but were suppressed
+        : during a sweep, optimization, or Monte Carlos analysis.
+        : 	Use '.options maxmsg=0' to view all warnings.
+
+
+Optimization parameters:
+           x = 2e-009            derivative = -0.0030537     
+
+Optimization initialization: resid=0.0225211 grad=0.0030537 Marquardt=0.001
+
+Optimization parameters:
+           x = 2.1e-009          derivative = 0.0428818      
+
+
+Measure information will be written to file "D:\pesquisa\Projeto SEE\Algoritmos\MeuModelo\src\bruno\Output\nand3\100\Passo2_nand3_100_PD_N1toGND_FO4\Passo2_nand3_100_PD_N1toGND_FO4.measure"
+
+Measurement result summary: OPTIMIZE=opt2_1
+   setTracker      =   -2.8242m      
+   vPeakMin        =   -2.1509m      
+   vPeakMax        =   -1.8419m      
+   avgPrompt       =   18.7472u      
+   cargaPrompt     =    7.4989f      
+   avgHold         =   82.5934u      
+   cargaHold       =   33.0374f      
+
+Optimization iteration 1
+                   Residual = 0.00971667
+              Gradient norm = 0.0428818
+        Marquardt parameter = 0.0005
+       Function evaluations = 4
+                  Converged = no
+         Gradient converged = no
+            Input converged = no
+           Output converged = no
+
+Optimization parameters:
+           x = 2.07171e-009      derivative = 0.00153878     
+
+
+Measurement result summary: OPTIMIZE=opt2_2
+   setTracker      =   -2.8242m      
+   vPeakMin        =   -2.0167m      
+   vPeakMax        =  730.5102m      
+   avgPrompt       =   18.7472u      
+   cargaPrompt     =    7.4989f      
+   avgHold         =   58.2969u      
+   cargaHold       =   23.3188f      
+
+Optimization iteration 2
+                   Residual = 7.76801e-006
+              Gradient norm = 0.00153878
+        Marquardt parameter = 0.00025
+       Function evaluations = 2
+                  Converged = yes
+         Gradient converged = no
+            Input converged = no
+           Output converged = yes
+
+Optimization results:
+                   Residual = 7.76801e-006
+              Gradient norm = 0.00153878
+        Marquardt parameter = 0.00025
+       Function evaluations = 6
+       Number of iterations = 2
+         Gradient converged = no
+            Input converged = no
+           Output converged = yes
+
+Optimized parameter values:
+   x =  2.0717e-009
+
+Measurement result summary: OPTIMIZE=opt2_2
+   setTracker      =   -2.8242m      
+   vPeakMin        =   -2.0064m      
+   vPeakMax        =  740.5749m      
+   avgPrompt       =   18.7472u      
+   cargaPrompt     =    7.4989f      
+   avgHold         =   56.5194u      
+   cargaHold       =   22.6078f      
+
+Parsing                      0.01 seconds
+.TRAN Sweep                 26.55 seconds
+Overhead                     2.40 seconds
+-----------------------------------------
+Total                       28.95 seconds
+
+Simulation completed	with  2 Warnings
